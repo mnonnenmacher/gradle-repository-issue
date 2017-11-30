@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+    maven {
+        url 'https://repo.jenkins-ci.org/releases/'
+    }
+
+    jcenter()
+}
+
+dependencies {
+    compile 'org.jenkins-ci.main:jenkins-test-harness:2.32'
+    compile 'org.jenkins-ci.main:jenkins-war:2.92'
+}
